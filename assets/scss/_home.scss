@@ -10,8 +10,7 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: 0 7px;
         color: black;
         font-size: 17px;
         &.active {
@@ -72,6 +71,6 @@
     color: #6667ab;
   }
   .product {
-    width: 18rem;
+    width: 15rem;
   }
 }
