@@ -64,17 +64,35 @@ ol, ul {
   background-color: #6667ab;
   color: white;
   font-weight: 700;
+  font-family: "Nunito", sans-serif;
   border-radius: 60px;
 }
 
-.products .title {
+.products-home .title {
   font-weight: 700;
 }
-.products .sub-title {
+.products-home .sub-title {
   color: #6667ab;
 }
-.products .product {
-  width: 15rem;
+.products-home .product-card {
+  width: 18rem;
+  border: 0;
+}
+.products-home .product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.story .title {
+  font-weight: 700;
+}
+.story .sub-title {
+  color: #6667ab;
+}
+.story .story-card {
+  border: 0;
+}
+.story .story-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,18 +59,40 @@
   background-color: #6667ab;
   color: white;
   font-weight: 700;
+  font-family: 'Nunito', sans-serif;
   border-radius: 60px;
 }
 
+
 //Products
-.products {
+.products-home {
   .title {
     font-weight: 700;
   }
   .sub-title {
     color: #6667ab;
   }
-  .product {
-    width: 15rem;
+  .product-card {
+    width: 18rem;
+    border: 0;
+  }
+  .product-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+//Story
+.story {
+  .title {
+    font-weight: 700;
+  }
+  .sub-title {
+    color: #6667ab;
+  }
+  .story-card {
+    border: 0;
+  }
+  .story-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
