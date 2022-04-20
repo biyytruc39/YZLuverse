@@ -7,7 +7,7 @@
 }
 
 html, body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
   scroll-behavior: smooth;
 }
@@ -19,7 +19,7 @@ ol, ul {
 .navbar .navbar-brand {
   font-size: 2rem;
   font-family: "Pacifico", cursive;
-  color: black;
+  color: #6667ab;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   margin: 0 7px;
@@ -91,8 +91,55 @@ ol, ul {
 .story .story-card {
   border: 0;
 }
+.story .story-card .card-body .card-title {
+  margin: 6px;
+}
 .story .story-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.read-more-btn {
+  height: 45px;
+  width: 35%;
+  border: 2px solid #6667ab;
+  outline: none;
+  background-color: white;
+  color: #6667ab;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  border-radius: 60px;
+}
+
+.read-more-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s;
+}
+
+.footer {
+  background-color: #6667ab;
+  color: white;
+}
+.footer .title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+.footer .sub-title {
+  font-size: 17px;
+}
+.footer h2 {
+  font-family: "Pacifico", sans-serif;
+}
+.footer .footer-content {
+  padding-top: 40px;
+}
+.footer .footer-content p {
+  margin: 0;
+}
+.footer .footer-content .fab {
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
