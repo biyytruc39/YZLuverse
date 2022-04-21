@@ -17,19 +17,29 @@
     <div class="account-wrapper">
         <div class="account-form">
             <h1>Sign Up Now</h1>
-            <form name="myform" method="post">
-            <input type="email" class="input-box" placeholder="Your Email" required> 
-            <input type="text" class="input-box" placeholder="Your Name" name="fname" required> 
-            <input type="password" class="input-box" placeholder="Your Password" required>   
-            <p class="agree-text"><input type="checkbox"><span>I agree to the terms of services</span></p>
-            <button type="button" class="acc-btn">Sign Up</button>
-            <hr>
-            <div class="acc-text">
-                <p class="or">OR</p>
-                <p>Do you have an account? <a href="signin.html">Sign in</a></p>
-            </div>
+            <form name="myform" method="post" id="form" class="form">
+                <div class="input-form">
+                    <input type="email" class="input-box" autofocus placeholder="Your Email" required id="email">
+                    <small>Error message</small>
+                </div>
+                <div class="input-form">
+                    <input type="text" class="input-box" autofocus placeholder="Your Username" name="fname" required id="username"> 
+                    <small>Error message</small>
+                </div>
+                <div class="input-form">
+                    <input type="password" class="input-box" placeholder="Your Password" required id="password">   
+                    <small>Error message</small>
+                </div>
+                <p class="agree-text"><input type="checkbox"><span>I agree to the terms of services</span></p>
+                <button type="button" class="acc-btn" id="acc_btn">Submit</button>
+                <hr>
+                <div class="acc-text">
+                    <p class="or">OR</p>
+                    <p>Do you have an account? <a href="signin.html" id="linkSignin">Sign in</a></p>
+                </div>
             </form>
         </div>
-    </div>   
+    </div>  
+    <script src="/assets/js/form.js"></script> 
 </body>
 </html>

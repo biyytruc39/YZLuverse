@@ -172,7 +172,11 @@ body.account {
   font-weight: 700;
   margin-bottom: 30px;
 }
-.account-form .input-box {
+.account-form .input-form {
+  border: none;
+  position: relative;
+}
+.account-form .input-form .input-box {
   border-radius: 20px;
   padding: 0 20px;
   margin: 10px 0;
@@ -181,6 +185,28 @@ body.account {
   border: 1px solid #e4e5e6;
   outline: none;
   box-sizing: border-box;
+}
+.account-form .input-form .input-box:focus {
+  outline: 0;
+  border-color: #00bfa6;
+}
+.account-form .input-form .success input {
+  border-color: #2ecc71;
+}
+.account-form .input-form .error input {
+  border-color: #e74c3c;
+}
+.account-form .input-form small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  visibility: hidden;
+  font-size: 12px;
+}
+.account-form .input-form .error small {
+  color: #e74c3c;
+  visibility: visible;
 }
 .account-form .agree-text {
   text-align: left;
@@ -197,11 +223,19 @@ body.account {
 .acc-btn {
   color: white;
   font-weight: 500;
-  width: 100%;
+  width: 60%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
+  border-radius: 4px;
   background-color: #6667ab;
+}
+
+.acc-btn:hover {
+  border: 2px solid #6667ab;
+  background-color: white;
+  color: #6667ab;
+  font-weight: 700;
 }
 
 .acc-text {
@@ -211,6 +245,10 @@ body.account {
 .acc-text a {
   text-decoration: none;
   color: #6667ab;
+}
+
+.container-details {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

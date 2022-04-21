@@ -17,17 +17,24 @@
     <div class="account-wrapper">
         <div class="account-form">
             <h1>Sign In Now</h1>
-            <form name="myform" method="post">
-            <input type="email" class="input-box" placeholder="Your Email" required> 
-            <input type="password" class="input-box" placeholder="Your Password" required>   
-            <button type="button" class="acc-btn">Sign In</button>
-            <hr>
-            <div class="acc-text">
-                <p class="or">OR</p>
-                <p>New Customer? <a href="signup.html">Create an account.</a></p>
-            </div>
+            <form name="myform" method="post" id="form">
+                <div class="input-form">
+                    <input type="text" class="input-box" autofocus placeholder=" Your Username" required id="username">
+                    <small>Error message</small>
+                </div>
+                <div class="input-form">
+                    <input type="password" class="input-box" autofocus placeholder="Your Password" required id="password">   
+                    <small>Error message</small>
+                </div>
+                <button type="button" class="acc-btn" id="acc-btn">Submit</button>
+                <hr>
+                <div class="acc-text">
+                    <p class="or">OR</p>
+                    <p>New Customer? <a href="signup.html" id="linkSignup">Create an account.</a></p>
+                </div>
             </form>
         </div>
-    </div>   
+    </div> 
+    <script src="/assets/js/form.js"></script>   
 </body>
 </html>
