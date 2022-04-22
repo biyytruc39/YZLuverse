@@ -20,6 +20,7 @@ ol, ul {
   font-size: 2rem;
   font-family: "Pacifico", cursive;
   color: #6667ab;
+  margin-left: 20px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   margin: 0 7px;
@@ -141,6 +142,9 @@ ol, ul {
   cursor: pointer;
   padding-right: 5px;
 }
+.footer .footer-content .web-add {
+  margin-top: 10px;
+}
 
 body.account {
   margin: 0;
@@ -248,20 +252,18 @@ body.account {
 }
 
 .container-details {
-  margin-top: 100px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 
-.product-primary-image {
+.product-detail-pic {
   max-width: 100%;
   padding: 0;
   text-align: center;
   position: relative;
 }
-.product-primary-image .product-image {
-  max-width: 100%;
-}
 
-.col-md-6 {
+.product-detail-text {
   padding-left: 20px;
   padding-top: 40px;
 }
@@ -275,17 +277,32 @@ body.account {
 }
 
 .product-title {
-  font-size: 26px;
-  font-weight: bold;
-  padding-top: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 
 .product-subtitle {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.product-rating i {
+  margin-right: -2px;
+  color: #6667ab;
+}
+.product-rating span {
+  color: #6667ab;
+  margin-left: 4px;
 }
 
 .product-price {
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .product-quantity {
@@ -313,6 +330,21 @@ body.account {
   border-top: lightgrey;
   border-width: 450px;
   border-radius: 4px;
+}
+.more-info h4 {
+  font-weight: lighter;
+}
+
+.menshop-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.men-product-tilte {
+  text-align: left;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
