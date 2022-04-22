@@ -16,6 +16,10 @@ ol, ul {
   list-style: none;
 }
 
+.navbar {
+  background: white;
+  border-bottom: 1px solid #ebebeb;
+}
 .navbar .navbar-brand {
   font-size: 2rem;
   font-family: "Pacifico", cursive;
@@ -81,6 +85,13 @@ ol, ul {
 }
 .products-home .product-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.products-home .btn-sp {
+  background: #6667ab;
+  color: white;
+}
+.products-home .btn-sp:hover {
+  color: #212529;
 }
 
 .story .title {
@@ -341,10 +352,15 @@ body.account {
 }
 
 .men-product-tilte {
-  text-align: left;
-  font-size: 14px;
-  box-sizing: border-box;
-  margin-top: 10px;
+  text-align: center;
+  font-size: 26px;
+  color: #6667ab;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.men-product-list {
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

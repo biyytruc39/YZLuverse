@@ -14,7 +14,7 @@
     <script src="./bootstrap-5.0.2/dist/js/bootstrap.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">YZLuverse</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto my-2 my-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -31,12 +31,12 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Body Care
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Woman</a></li>
-                  <li><a class="dropdown-item" href="#">Man</a></li>
+                  <li><a class="dropdown-item" href="menshop.html">Women</a></li>
+                  <li><a class="dropdown-item" href="#">Men</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -65,15 +65,12 @@
 
     <section class="products-home">
         <div class="container py-5">
-            <div class="row py-5 justify-content-center">
-                <div class="col-lg-5 m-auto text-center">
-                  <h1 class="title">The Men's Shop</h1>
-                  <h6 class="sub-title">Grab every essential you need right here.</h6>
-                </div>
-                <div class="section-title men-product-tilte">
-                    <p>MEN'S SHOP | BODY WASH</p>
-                </div>
-                <div class="row">
+            <div class="row py-5">
+              <div class="section-title men-product-tilte">
+                <p>MEN'S SHOP | BODY WASH</p>
+              </div>
+              <div class="men-product-list">
+                <div class="row ">
                     <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                         <div class="card product-card">
                             <img src="assets/img/men-fresh.jpg" class="men-sp" alt="fresh-water">
@@ -81,7 +78,7 @@
                                 <h5 class="card-title">Fresh Water</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">3-in-1 Hair, Face & Body Wash</h6>
                                 <h5 class="card-text">$14.50</h5>
-                                <a href="details.html" class="btn btn-primary">Buy Now</a>
+                                <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +89,7 @@
                                 <h5 class="card-title">Ocean</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">3-in-1 Hair, Face & Body Wash</h6>
                                 <h5 class="card-text">$13.50</h5>
-                                <a href="details.html" class="btn btn-primary">Buy Now</a>
+                                <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +100,7 @@
                             <h5 class="card-title">Black Tie</h5>
                             <h6 class="card-subtitle mb-2 text-muted">3-in-1 Hair, Face & Body Wash</h6>
                             <h5 class="card-text">$16.50</h5>
-                            <a href="details.html" class="btn btn-primary">Buy Now</a>
+                            <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
                           </div>
                         </div>
                     </div>
@@ -114,14 +111,109 @@
                             <h5 class="card-title">VINTAGE</h5>
                             <h6 class="card-subtitle mb-2 text-muted">3-in-1 Hair, Face & Body Wash</h6>
                             <h5 class="card-text">$15.00</h5>
-                            <a href="details.html" class="btn btn-primary">Buy Now</a>
+                            <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
                           </div>
                         </div>
                     </div>
                 </div>
+              </div>
+              <div class="section-title men-product-tilte">
+                <p>MEN'S SHOP | BODY CREAM</p>
+              </div>
+              <div class="men-product-list">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div class="card product-card">
+                            <img src="assets/img/clear-cream.jpg" class="men-sp" alt="clear">
+                            <div class="card-body">
+                                <h5 class="card-title">Clear Horizon</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Ultimate Hydration Body Cream</h6>
+                                <h5 class="card-text">$15.05</h5>
+                                <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div class="card product-card">
+                            <img src="assets/img/graphite.jpg" class="men-sp" alt="graphite">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphite</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Ultimate Hydration Body Cream</h6>
+                                <h5 class="card-text">$13.50</h5>
+                                <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div class="card product-card">
+                          <img src="assets/img/marble.jpg" class="men-sp" alt="marble">
+                          <div class="card-body">
+                            <h5 class="card-title">Marble</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Ultimate Hydration Body Cream</h6>
+                            <h5 class="card-text">$16.50</h5>
+                            <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div class="card product-card">
+                          <img src="assets/img/stone-cream.jpg" class="men-sp" alt="stone">
+                          <div class="card-body">
+                            <h5 class="card-title">Stone</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Ultimate Hydration Body Cream</h6>
+                            <h5 class="card-text">$16.00</h5>
+                            <a href="product-detail.html" class="btn btn-sp">Buy Now</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
-        
+    </section>
+
+    <section class="footer py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-9 m-auto text-center">
+            <h1 class="title">We just want you to love it</h1>
+            <h6 class="sub-title">Return anything, anytime for any reason</h6>
+            <h2>100% Guaranteed</h2>
+          </div>
+        </div>
+        <div class="row footer-content">
+          <div class="col-lg-11">
+            <div class="row">
+              <div class="col-sm-3 py-2">
+                <h5 class="pb-3">CUSTOMER CARE</h5>
+                <p>Regular</p>
+                <p>On Time</p>
+                <p>Always Care</p>
+              </div>
+              <div class="col-sm-3 py-2">
+                <h5 class="pb-3">HELP & FAQs</h5>
+                <p>Shipping</p>
+                <p>Order Tracking</p>
+                <p>Return & Exchange</p>
+              </div><div class="col-sm-3 py-2">
+                <h5 class="pb-3">DISCOVERE</h5>
+                <p>About Us</p>
+                <p>Gift Cards</p>
+                <p>Get Inspired</p>
+              </div>
+              <div class="col-sm-3 py-2">
+                <h5 class="pb-3">FIND US</h5>
+                <span><i class="fab fa-facebook"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <p class="web-add">yzluversehome314@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">Copyright ©2022 All Rights Reserved | YZLuverse</p>
+      </div>
     </section>
 
     
