@@ -61,16 +61,14 @@ ol, ul {
   font-weight: bold;
 }
 
-.more-tips-btn {
-  height: 45px;
+.shop-now-btn {
   width: 35%;
   border: none;
   outline: none;
   background-color: #6667ab;
   color: white;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
   border-radius: 60px;
+  letter-spacing: 3px;
 }
 
 .products-home .title {
@@ -94,32 +92,39 @@ ol, ul {
   color: #212529;
 }
 
-.story .title {
+.blog .title {
   font-weight: 700;
 }
-.story .sub-title {
+.blog .sub-title {
   color: #6667ab;
 }
-.story .story-card {
+.blog .blog-card {
   border: 0;
 }
-.story .story-card .card-body .card-title {
+.blog .blog-card .card-body .card-title {
   margin: 6px;
 }
-.story .story-card:hover {
+.blog .blog-card .card-body a {
+  background: #6667ab;
+  color: white;
+}
+.blog .blog-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.read-more-btn {
-  height: 45px;
-  width: 35%;
-  border: 2px solid #6667ab;
-  outline: none;
-  background-color: white;
-  color: #6667ab;
-  font-weight: 700;
-  font-family: "Nunito", sans-serif;
-  border-radius: 60px;
+.blg-btn {
+  padding-top: 40px;
+  width: 100%;
+}
+.blg-btn .read-more-btn {
+  background: #6667ab;
+  color: white;
+  letter-spacing: 3px;
+  width: 20%;
+  text-decoration: none;
+}
+.blg-btn .read-more-btn:hover {
+  color: #212529;
 }
 
 .read-more-btn:hover {
@@ -361,6 +366,165 @@ body.account {
 
 .men-product-list {
   padding-bottom: 60px;
+}
+
+.blog-banner {
+  background-image: url(../img/cover.jpg);
+  align-items: center;
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+  padding: 45px 0 45px;
+}
+.blog-banner h2 {
+  font-size: 46px;
+  color: white;
+  font-weight: 700;
+}
+.blog-banner a {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  margin-right: 20px;
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+}
+.blog-banner span {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+}
+
+.blog-title {
+  border-bottom: 3px solid #333;
+  color: #333;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  padding-bottom: 6px;
+  margin: 0 auto 20px;
+  position: relative;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+.blog-title img {
+  height: 30px;
+  position: absolute;
+  bottom: 6px;
+}
+.blog-title span.blog2 {
+  padding-left: 40px;
+}
+
+.blog-content {
+  padding-bottom: 60px;
+}
+
+.blog-detail-title {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+.blog-detail-title a {
+  color: black;
+}
+
+.blog-detail-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-detail-content {
+  padding-top: 20px;
+}
+.blog-detail-content .blg-dt-text1 {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.blog-detail-item .blg-dt {
+  padding-top: 70px;
+}
+.blog-detail-item .card-body {
+  width: 90%;
+  padding-top: 10px;
+}
+.blog-detail-item .card-body1 {
+  width: 90%;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.blog-detail-item .card-title {
+  color: #6667ab;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.blog-detail-item .card-subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+.blog-detail-item .card-text {
+  padding-top: 5px;
+  font-size: 16px;
+}
+.blog-detail-item .blockquote {
+  font-size: 14px;
+  margin: 10px auto 0;
+  width: 90%;
+}
+.blog-detail-item .blg-text-footer {
+  padding-top: 60px;
+  color: #6667ab;
+  width: 100%;
+}
+.blog-detail-item .blg-text-footer h1 {
+  font-weight: 700;
+}
+.blog-detail-item .blg-text-footer h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+}
+.blog-detail-item .blg-text-footer .btn-sp {
+  background: #6667ab;
+  color: white;
+  letter-spacing: 3px;
+  width: 20%;
+}
+.blog-detail-item .blg-text-footer .btn-sp:hover {
+  color: #212529;
+}
+
+.contact {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.contact__widget {
+  margin-bottom: 30px;
+}
+.contact__widget span {
+  font-size: 36px;
+  color: #6667ab;
+}
+.contact__widget h4 {
+  color: #1c1c1c;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-top: 18px;
+}
+.contact__widget p {
+  color: #666666;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

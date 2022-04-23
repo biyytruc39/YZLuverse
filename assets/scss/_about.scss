@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.contact__widget {
+    margin-bottom: 30px;
+    span {
+        font-size: 36px;
+        color: #6667ab;
+    }
+    h4 {
+        color: #1c1c1c;
+        font-weight: 700;
+        margin-bottom: 6px;
+	    margin-top: 18px;
+    }
+    p {
+        color: #666666;
+	    margin-bottom: 0;
+    }
+}
