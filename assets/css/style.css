@@ -657,4 +657,77 @@ body.account {
   border-radius: 4px;
 }
 
+.shopping-cart {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.shopping_cart_table {
+  margin-bottom: 30px;
+}
+.shopping_cart_table table {
+  width: 100%;
+  text-align: center;
+}
+.shopping_cart_table table thead tr {
+  border-bottom: 1px solid #ebebeb;
+}
+.shopping_cart_table table thead th {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.shopping_cart_table table .shopping_product {
+  text-align: left;
+}
+.shopping_cart_table table tbody tr td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+.shopping_cart_table .shopping_cart_item {
+  width: 630px;
+  text-align: left;
+}
+.shopping_cart_table .shopping_cart_item img {
+  display: inline-block;
+  margin-right: 25px;
+  width: 80px;
+  height: 100px;
+  border: 1px solid #ebebeb;
+}
+.shopping_cart_table .shopping_cart_item h5 {
+  display: inline-block;
+  padding-top: 10px;
+}
+.shopping_cart_table .shopping_cart_price {
+  font-size: 18px;
+  font-weight: 700;
+  width: 100px;
+}
+.shopping_cart_table .shopping_cart_total {
+  font-size: 18px;
+  font-weight: 700;
+  width: 110px;
+}
+.shopping_cart_table .shopping_cart_item_close {
+  text-align: right;
+}
+.shopping_cart_table .shopping_cart_item_close span {
+  font-size: 24px;
+  color: #b2b2b2;
+  cursor: pointer;
+}
+.shopping_cart_table .shopping_cart_quantity {
+  width: 225px;
+}
+.shopping_cart_table .shopping_cart_quantity .pro-qty {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+.shopping_cart_table .shopping_cart_quantity .pro-qty .qtybtn {
+  width: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
