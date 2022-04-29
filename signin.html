@@ -13,28 +13,29 @@
     <script src="https://kit.fontawesome.com/e6947bb97b.js" crossorigin="anonymous"></script>
     <script src="./bootstrap-5.0.2/dist/js/bootstrap.js"></script>  
 </head>
-<body class="account">
-    <div class="account-wrapper">
-        <div class="account-form">
-            <h1>Sign In Now</h1>
-            <form name="myform" method="post" id="form">
-                <div class="input-form">
-                    <input type="text" class="input-box" autofocus placeholder=" Your Username" required id="username">
-                    <small>Error message</small>
+<body class="register">
+    <section class="form-account-wrapper">
+        <div class="container">
+            <form name="myform" method="post" id="form" class="form">
+                <h1>Sign In Now</h1>
+                <div class="input-control">
+                    <input id="username" name="username" type="text" placeholder="Your Username">
+                    <div class="error"></div>
                 </div>
-                <div class="input-form">
-                    <input type="password" class="input-box" autofocus placeholder="Your Password" required id="password">   
-                    <small>Error message</small>
+                <div class="input-control">
+                    <input id="password"name="password" type="password" placeholder="Password"> 
+                    <div class="error"></div>
                 </div>
-                <button type="button" class="acc-btn" id="acc-btn">Submit</button>
+                <button type="submit">Sign In</button>
                 <hr>
-                <div class="acc-text">
+                <div class="acc-text text-center">
                     <p class="or">OR</p>
-                    <p>New Customer? <a href="signup.html" id="linkSignup">Create an account.</a></p>
+                    <p>New Customer? <a href="signup.html" id="linkSignin">Create an account</a></p>
                 </div>
             </form>
         </div>
-    </div> 
-    <script src="/assets/js/form.js"></script>   
+    </section>
+    <script src="/assets/js/main.js"></script>
+
 </body>
 </html>

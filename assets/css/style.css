@@ -173,111 +173,6 @@ ol, ul {
   fill: white;
 }
 
-body.account {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  background-image: url(../img/cover.jpg);
-  background-size: cover;
-  background-position: left;
-}
-
-.account-wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.account-form {
-  width: 350px;
-  box-shadow: 0 0 3px 0 #6667ab;
-  background: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 15px;
-}
-.account-form h1 {
-  color: #6667ab;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-.account-form .input-form {
-  border: none;
-  position: relative;
-}
-.account-form .input-form .input-box {
-  border-radius: 20px;
-  padding: 0 20px;
-  margin: 10px 0;
-  width: 100%;
-  height: 40px;
-  border: 1px solid #e4e5e6;
-  outline: none;
-  box-sizing: border-box;
-}
-.account-form .input-form .input-box:focus {
-  outline: 0;
-  border-color: #00bfa6;
-}
-.account-form .input-form .success input {
-  border-color: #2ecc71;
-}
-.account-form .input-form .error input {
-  border-color: #e74c3c;
-}
-.account-form .input-form small {
-  color: #e74c3c;
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  visibility: hidden;
-  font-size: 12px;
-}
-.account-form .input-form .error small {
-  color: #e74c3c;
-  visibility: visible;
-}
-.account-form .agree-text {
-  text-align: left;
-  margin: 20px 0;
-}
-.account-form .agree-text span {
-  text-align: left;
-  font-size: 17px;
-}
-.account-form .agree-text input {
-  margin-right: 15px;
-}
-
-.acc-btn {
-  color: white;
-  font-weight: 500;
-  width: 60%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #6667ab;
-}
-
-.acc-btn:hover {
-  border: 2px solid #6667ab;
-  background-color: white;
-  color: #6667ab;
-  font-weight: 700;
-}
-
-.acc-text {
-  margin-top: 20px;
-  font-size: 17px;
-}
-.acc-text a {
-  text-decoration: none;
-  color: #6667ab;
-}
-
 .container-details {
   margin-top: 20px;
   margin-bottom: 80px;
@@ -1034,6 +929,105 @@ body.account {
   margin-top: 10px;
   color: white;
   background: #6667ab;
+}
+
+body.register {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.form-account-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  width: 350px;
+  margin: 40px auto 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+#form h1 {
+  font-weight: 700;
+  color: #6667ab;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#form button {
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: #6667ab;
+  border: none;
+  border-radius: 4px;
+}
+#form button:hover {
+  color: #212529;
+}
+
+.agree-text {
+  text-align: center;
+  padding-top: 10px;
+}
+.agree-text span {
+  text-align: left;
+  font-size: 16px;
+}
+.agree-text input {
+  margin-right: 15px;
+}
+
+.acc-text {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.acc-text a {
+  text-decoration: none;
+  color: #6667ab;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
