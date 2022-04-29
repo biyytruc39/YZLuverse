@@ -1,218 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap-5.0.2/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/e6947bb97b.js" crossorigin="anonymous"></script>
-    <script src="./bootstrap-5.0.2/dist/js/bootstrap.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YZLuverse Store</title>
+	<!-- Font Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Pacifico&family=Poppins:wght@500&display=swap"
+		rel="stylesheet">
+	<!-- Awesome -->
+	<link rel="stylesheet" href="./font-awesome/css/all.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./bootstrap-5.0.2/dist/css/bootstrap.css">
+	<!-- Custom -->
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">YZLuverse</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto my-2 my-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Body mist
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Body Care
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="product.html">Women</a></li>
-                  <li><a class="dropdown-item" href="#">Men</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Candle</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="signup.html">Sign Up</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="px-3 search" type="search" placeholder="Search" aria-label="Search">
-              <button class="search-button" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
+	<header class="container-fluid bg-white">
+		<div class="main-header d-flex justify-content-between align-items-center container">
+			<h1 class="brand-name align-self-center">
+				<a class="logo" href="index.html">YZLuverse</a>
+			</h1>
+			<div class="main-header-right d-flex align-items-center">
+				<form class="d-flex form-search">
+					<input class="px-3 search" placeholder="Search..." aria-label="Search">
+					<button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+				<div class="header-cart position-relative mx-3">
+					<i class="fas fa-shopping-cart cart-icon"></i>
+					<span
+						class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-sm navbar-light">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<i class="fas fa-bars text-peri"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav m-auto my-2 my-md-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html">Product</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="about.html">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							My account
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="signin.html">Sign in / Sign up</a></li>
+							<li><a class="dropdown-item" href="shopping-cart.html">Order tracking</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-    <section class="blog-banner">
-        <div class="container-blog">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="blog_text">
-                        <h2>About Us</h2>
-                        <div class="blog__option">
-                            <a href="index.html">Home</a>
-                            <span>| Us</span>
-                        </div>
-                    </div>
-                </div>
+	<section class="blog-banner">
+		<div class="container-blog">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="blog_text">
+            <h2>About Us</h2>
+            <div class="blog__option text-center">
+                <a href="index.html" class="m-2">Home</a>
+                <span>|</span>
+                <a href="blog.html" class="m-2">Blog</a>
             </div>
         </div>
-    </section>
+			</div>
+		</div>
+	</section>
 
-    <section class="intro">
-      <div class="container py-5">
-        <div class="row py-5">
-          <div class="col-lg-8 m-auto text-center">
-            <h2 class="title">We make the world a brighter, happier place through the power of fragrance.</h2>
-            <h4 class="sub-title text-muted">This idea is what we were founded on, and it's at the heart of everything we do. We're a team that cares about our customers and believes in giving them a reason to celebrate with fragrance every day.</h4>
-            <h1>YZLuverse</h1>
-          </div> 
-          <div class="intro-content">
-            <p>YZLuverse is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances to soothing skin care, we make finding your perfect something special a happy-memory-making experience. Searching for new seasonal creations or your favorite discontinued scents? We've got you covered there, too. Oh! And while you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</p>
-            <p>We are committed to creating a diverse, equitable and inclusive culture that is focused on delivering exceptional fragrances and experiences.</p>
+	<section class="intro">
+		<div class="container py-5">
+			<div class="row py-5">
+				<div class="col-lg-8 m-auto text-center">
+					<h2 class="title">We make the world a brighter, happier place through the power of fragrance.</h2>
+					<h4 class="sub-title text-muted">This idea is what we were founded on, and it's at the heart of
+						everything we
+						do. We're a team that cares about our customers and believes in giving them a reason to
+						celebrate with
+						fragrance every day.</h4>
+					<h1>YZLuverse</h1>
+				</div>
+				<div class="intro-content">
+					<p>YZLuverse is your go-to place for gifts & goodies that surprise & delight. From fresh fragrances
+						to
+						soothing skin care, we make finding your perfect something special a happy-memory-making
+						experience.
+						Searching for new seasonal creations or your favorite discontinued scents? We've got you covered
+						there, too.
+						Oh! And while you're browsing, shop our latest & greatest selection of lotions, soaps and
+						candles!</p>
+					<p>We are committed to creating a diverse, equitable and inclusive culture that is focused on
+						delivering
+						exceptional fragrances and experiences.</p>
 
-            <p>We work hard to improve our communities and our planet in a way that will make us proud for years to come ... because we believe the world is a better place when everyone has access to the things that make them happy.</p>  
-              
-            <p>YZLuverse is an international company that sells personal care and beauty products in more than 1,700 North American stores and has nearly 300 stores in countries around the globe operating under franchise, license and wholesale arrangements. The company's products are also available online at www.yzluverse.com.</p> 
-          </div>
-        </div>
-      </div>
-    </section>
+					<p>We work hard to improve our communities and our planet in a way that will make us proud for years
+						to come
+						... because we believe the world is a better place when everyone has access to the things that
+						make them
+						happy.</p>
 
-    <section class="contact spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
-                      <h4>Phone</h4>
-                      <p>+01-3-8888-6868</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>                        
-                      <h4>Address</h4>
-                      <p>60-49 Road 11378 New York</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>                        <h4>Open time</h4>
-                      <p>10:00 am to 23:00 pm</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <div class="contact__widget">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>                        <h4>Email</h4>
-                      <p>yzluverse314@gmal.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+					<p>YZLuverse is an international company that sells personal care and beauty products in more than
+						1,700 North
+						American stores and has nearly 300 stores in countries around the globe operating under
+						franchise, license
+						and wholesale arrangements. The company's products are also available online at
+						www.yzluverse.com.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <div class="map">
-      <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd"
-          height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <div class="map-inside">
-          <i class="icon_pin"></i>
-          <div class="inside-widget">
-              <h4>New York</h4>
-              <ul>
-                  <li>Phone: +12-345-6789</li>
-                  <li>Add: 16 Creek Ave. Farmingdale, NY</li>
-              </ul>
-          </div>
-      </div>
-    </div>
+	<section class="contact spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 text-center">
+					<div class="contact__widget">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+						</svg>
+						<h4>Phone</h4>
+						<p>+01-3-8888-6868</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 text-center">
+					<div class="contact__widget">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+							<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z" />
+						</svg>
+						<h4>Address</h4>
+						<p>60-49 Road 11378 New York</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 text-center">
+					<div class="contact__widget">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z" />
+						</svg>
+						<h4>Open time</h4>
+						<p>10:00 am to 23:00 pm</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 text-center">
+					<div class="contact__widget">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+						</svg>
+						<h4>Email</h4>
+						<p>yzluverse314@gmal.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <div class="contact-form spad">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="contact__form__title">
-                      <h2>Leave Message</h2>
-                  </div>
-              </div>
-          </div>
-          <form action="#">
-              <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                      <input type="text" placeholder="Your name">
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                      <input type="text" placeholder="Your Email">
-                  </div>
-                  <div class="col-lg-12 text-center">
-                      <textarea placeholder="Your message"></textarea>
-                      <button type="submit" class="site-btn">SEND MESSAGE</button>
-                  </div>
-              </div>
-          </form>
-      </div>
-  </div>
-  
-    <footer class="footer py-5">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-9 m-auto text-center">
-            <h1 class="title">We just want you to love it</h1>
-            <h6 class="sub-title">Return anything, anytime for any reason</h6>
-            <h2>100% Guaranteed</h2>
-          </div>
-        </div>
-        <div class="row footer-content">
-          <div class="col-lg-11">
-            <div class="row">
-              <div class="col-sm-3 py-2">
-                <h5 class="pb-3">CUSTOMER CARE</h5>
-                <p>Regular</p>
-                <p>On Time</p>
-                <p>Always Care</p>
-              </div>
-              <div class="col-sm-3 py-2">
-                <h5 class="pb-3">HELP & FAQs</h5>
-                <p>Shipping</p>
-                <p>Order Tracking</p>
-                <p>Return & Exchange</p>
-              </div><div class="col-sm-3 py-2">
-                <h5 class="pb-3">DISCOVERE</h5>
-                <p>About Us</p>
-                <p>Gift Cards</p>
-                <p>Get Inspired</p>
-              </div>
-              <div class="col-sm-3 py-2">
-                <h5 class="pb-3">FIND US</h5>
-                <div class="icon-footer">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-                </div>
-                <p class="web-add">yzluversehome314@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <p class="text-center">Copyright ©2022 All Rights Reserved | YZLuverse</p>
-      </div>
-    </footer>
-    
+	<div class="map">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd"
+			height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="map-inside">
+			<i class="icon_pin"></i>
+			<div class="inside-widget">
+				<h4>New York</h4>
+				<ul>
+					<li>Phone: +12-345-6789</li>
+					<li>Add: 16 Creek Ave. Farmingdale, NY</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-form spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="contact__form__title">
+						<h2>Leave Message</h2>
+					</div>
+				</div>
+			</div>
+			<form action="#">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<input type="text" placeholder="Your name">
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<input type="text" placeholder="Your Email">
+					</div>
+					<div class="col-lg-12 text-center">
+						<textarea placeholder="Your message"></textarea>
+						<button type="submit" class="site-btn">SEND MESSAGE</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer class="footer py-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-9 m-auto text-center">
+					<h1 class="title">We just want you to love it</h1>
+					<h6 class="sub-title">Return anything, anytime for any reason</h6>
+					<h2>100% Guaranteed</h2>
+				</div>
+			</div>
+			<div class="row footer-content">
+				<div class="col-lg-11">
+					<div class="row">
+						<div class="col-sm-3 py-2">
+							<h5 class="pb-3">CUSTOMER CARE</h5>
+							<p>Regular</p>
+							<p>On Time</p>
+							<p>Always Care</p>
+						</div>
+						<div class="col-sm-3 py-2">
+							<h5 class="pb-3">HELP & FAQs</h5>
+							<p>Shipping</p>
+							<p>Order Tracking</p>
+							<p>Return & Exchange</p>
+						</div>
+						<div class="col-sm-3 py-2">
+							<h5 class="pb-3">DISCOVERE</h5>
+							<p>About Us</p>
+							<p>Gift Cards</p>
+							<p>Get Inspired</p>
+						</div>
+						<div class="col-sm-3 py-2">
+							<h5 class="pb-3">FIND US</h5>
+							<div class="icon-footer">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+									<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+								</svg>
+							</div>
+							<p class="web-add">yzluversehome314@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p class="text-center">Copyright ©2022 All Rights Reserved | YZLuverse</p>
+		</div>
+	</footer>
+
+	<script src="./bootstrap-5.0.2/dist/js/bootstrap.js"></script>
 </body>
+
 </html>
