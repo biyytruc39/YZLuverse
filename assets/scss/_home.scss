@@ -165,9 +165,26 @@
     font-family: 'Pacifico', sans-serif;
   }
   .footer-content {
-    padding-top: 40px;
+    padding-top: 30px;
+    justify-content: center;
+    h2 {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    h5 {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
     p {
       margin: 0;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
     .web-add {
       margin-top: 10px;
