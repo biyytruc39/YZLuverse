@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.products-home {
+    padding-top: 60px;
+}
+
+.menshop-banner {
+    display: flex;
+    justify-content: center;
+}
+.sidebar-item {
+    margin-bottom: 35px;
+    h4 {
+        color: #6667ab;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    ul li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: #6667ab;
+            line-height: 39px;
+            display: block;
+        }
+    }
+}
+.banner-adv {
+    img {
+        width: 230px;
+        height: 372px;
+    }
+}
+.men-product-tilte {
+    text-align: center;
+    font-size: 26px;
+    color: #6667ab;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.men-product-list {
+    padding-bottom: 60px;
+}

@@ -1,17 +1,16 @@
 @charset "UTF-8";
 
 // Carousel
-.more-tips-btn {
-  height: 45px;
+.shop-now-btn {
   width: 35%;
   border: none;
   outline: none;
   background-color: #6667ab;
   color: white;
-  font-weight: 700;
-  font-family: 'Nunito', sans-serif;
   border-radius: 60px;
+  letter-spacing: 3px;
 }
+
 
 
 //Products
@@ -19,49 +18,94 @@
   .title {
     font-weight: 700;
   }
+
   .sub-title {
     color: #6667ab;
   }
+
   .product-card {
-    width: 18rem;
+    width: 15rem;
     border: 0;
   }
+
   .product-card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
+  .btn-sp {
+    background: #6667ab;
+    color: white;
+  }
+
+  .btn-sp:hover {
+    color: #212529;
+  }
 }
 
-//Story
-.story {
+.shop-by-category {
   .title {
     font-weight: 700;
   }
+
+  .card-body {
+    a {
+      color: black;
+      font-weight: 600;
+    }
+  }
+}
+
+//Blog
+.blog {
+  .title {
+    font-weight: 700;
+  }
+
   .sub-title {
     color: #6667ab;
   }
-  .story-card {
+
+  .blog-card {
     border: 0;
+
     .card-body {
       .card-title {
         margin: 6px;
       }
+
+      a {
+        background: #6667ab;
+        color: white;
+      }
     }
   }
-  .story-card:hover {
+
+  .blog-card:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
-.read-more-btn {
-  height: 45px;
-  width: 35%;
-  border: 2px solid #6667ab;
-  outline: none;
-  background-color: white;
-  color: #6667ab;
-  font-weight: 700;
-  font-family: 'Nunito', sans-serif;
-  border-radius: 60px;
+
+.blg-btn {
+  padding-top: 40px;
+  width: 100%;
+
+  .read-more-btn {
+    background: #6667ab;
+    color: white;
+    letter-spacing: 3px;
+    width: 20%;
+    text-decoration: none;
+  }
+
+  .read-more-btn:hover {
+    color: #212529;
+  }
 }
+
+
+
+
+
 .read-more-btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.2s;
@@ -70,30 +114,41 @@
 .footer {
   background-color: #6667ab;
   color: white;
-  .title { 
+
+  .title {
     font-weight: 700;
     text-transform: uppercase;
     color: white;
   }
+
   .sub-title {
     font-size: 17px;
   }
+
   h2 {
     font-family: 'Pacifico', sans-serif;
   }
+
   .footer-content {
     padding-top: 40px;
+
     p {
       margin: 0;
     }
-    .fab {
-      font-size: 2.5rem;
-      cursor: pointer;
-      padding-right: 5px;
-    }
+
     .web-add {
       margin-top: 10px;
     }
   }
-  
+
+  .icon-footer {
+    display: inline;
+
+    svg {
+      width: 36px;
+      height: 36px;
+      fill: white;
+    }
+  }
+
 }
