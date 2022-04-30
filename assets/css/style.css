@@ -67,6 +67,11 @@ header {
   color: #6667ab;
   text-decoration: none;
 }
+@media (max-width: 575.98px) {
+  .main-header .brand-name a {
+    font-size: 1.5rem;
+  }
+}
 .main-header .main-header-right .form-search {
   border-bottom: 1px solid #6667ab;
 }
@@ -117,7 +122,7 @@ header {
 }
 
 .navbar {
-  padding-top: 0;
+  padding: 0;
 }
 .navbar .navbar-toggler {
   padding: 0;
@@ -126,11 +131,11 @@ header {
   border: none;
   box-shadow: none;
   position: relative;
-  top: -13px;
+  top: -10px;
   z-index: 2;
 }
 .navbar .navbar-toggler > i {
-  font-size: 25px;
+  font-size: 20px;
 }
 .navbar .navbar-collapse.show {
   background-color: white;

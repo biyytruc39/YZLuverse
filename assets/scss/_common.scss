@@ -60,6 +60,9 @@ header {
 			font-family: 'Pacifico', cursive;
 			color: $peri;
 			text-decoration: none;
+      @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+      }
 		}
 	}
 
@@ -114,7 +117,7 @@ header {
 }
 // Navbar
 .navbar {
-	padding-top: 0;
+	padding: 0;
 	.navbar-toggler {
 		padding: 0;
 		border-radius: 0;
@@ -122,10 +125,10 @@ header {
 		border: none;
 		box-shadow: none;
 		position: relative;
-		top: -13px;
+		top: -10px;
 		z-index: 2;
 		> i {
-			font-size: 25px;
+			font-size: 20px;
 		}
 	}
 	.navbar-collapse.show {
