@@ -11,6 +11,7 @@ form.addEventListener('submit', e => {
 });
 
 const setError = (element, message) => {
+    if (!element) return;
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
 
@@ -34,10 +35,18 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-    const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
+    var usernameValue = username.value.trim();
+    var passwordValue = password.value.trim();
+    var emailValue;
+    var password2Value;
+
+    if (!!email) {
+      emailValue = email.value.trim();
+    }
+    if (!!password2) {
+      password2Value = password2.value.trim();
+    }
+
 
     if(usernameValue === '') {
         setError(username, 'Username is required');
@@ -45,7 +54,7 @@ const validateInputs = () => {
         setSuccess(username);
     }
 
-    if(emailValue === '') {
+    if(!!email && emailValue === '') {
         setError(email, 'Email is required');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
@@ -61,7 +70,7 @@ const validateInputs = () => {
         setSuccess(password);
     }
 
-    if(password2Value === '') {
+    if(!!password2 && password2Value === '') {
         setError(password2, 'Please confirm your password');
     } else if (password2Value !== passwordValue) {
         setError(password2, "Passwords doesn't match");
