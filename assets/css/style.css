@@ -769,6 +769,12 @@ header {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+@media (max-width: 575.98px) {
+  .shopping-cart {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 
 .shopping_cart_table {
   margin-bottom: 30px;
@@ -781,7 +787,7 @@ header {
   border-bottom: 1px solid #ebebeb;
 }
 .shopping_cart_table table thead th {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   padding-bottom: 20px;
 }
@@ -810,12 +816,12 @@ header {
   padding-top: 40px;
 }
 .shopping_cart_table .shopping_cart_price {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
   width: 100px;
 }
 .shopping_cart_table .shopping_cart_total {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
   width: 110px;
 }
@@ -857,7 +863,7 @@ header {
 
 .cart-btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #6f6f6f;
   font-weight: 700;
   background-color: #f5f5f5;
@@ -873,7 +879,7 @@ header {
   margin-top: 45px;
 }
 .shopping_discount h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -914,7 +920,7 @@ header {
   margin-bottom: 28px;
 }
 .shopping_checkout ul li {
-  font-size: 16px;
+  font-size: 1rem;
   color: #1c1c1c;
   font-weight: 700;
   list-style: none;
@@ -924,7 +930,7 @@ header {
   margin-bottom: 18px;
 }
 .shopping_checkout ul li span {
-  font-size: 18px;
+  font-size: 1rem;
   color: #6667ab;
   float: right;
 }
