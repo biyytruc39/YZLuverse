@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
+//Color
+$peri: #6667ab;
+
 // Carousel
 .shop-now-btn {
   width: 35%;
   border: none;
   outline: none;
-  background-color: #6667ab;
+  background-color: $peri;
   color: white;
   border-radius: 60px;
   letter-spacing: 3px;
 }
-
-
 
 //Products
 .products-home {
@@ -20,25 +21,29 @@
   }
 
   .sub-title {
-    color: #6667ab;
+    color: $peri;
   }
 
-  .product-card {
-    width: 15rem;
-    border: 0;
-  }
-
-  .product-card:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  .btn-sp {
-    background: #6667ab;
-    color: white;
-  }
-
-  .btn-sp:hover {
-    color: #212529;
+  .product-card-wrapper {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    .product-card {
+      border: 0;
+      max-width: 200px;
+      padding: 10px 5px;
+      &:hover {
+        box-shadow: rgb(0 0 0 / 35%) 0px 0px 10px;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        .btn-sp {
+          margin-top: auto;
+          align-self: center;
+        }
+      }
+    }
   }
 }
 
@@ -46,11 +51,21 @@
   .title {
     font-weight: 700;
   }
-
-  .card-body {
-    a {
-      color: black;
-      font-weight: 600;
+  .shop-by-category-card {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      padding: 1rem;
+      width: 100%;
+      a {
+        color: black;
+        font-weight: 600;
+        &:hover {
+          color: $peri;
+        }
+      }
     }
   }
 }
@@ -62,7 +77,7 @@
   }
 
   .sub-title {
-    color: #6667ab;
+    color: $peri;
   }
 
   .blog-card {
@@ -71,11 +86,6 @@
     .card-body {
       .card-title {
         margin: 6px;
-      }
-
-      a {
-        background: #6667ab;
-        color: white;
       }
     }
   }
@@ -90,65 +100,12 @@
   width: 100%;
 
   .read-more-btn {
-    background: #6667ab;
-    color: white;
-    letter-spacing: 3px;
-    width: 20%;
     text-decoration: none;
-  }
-
-  .read-more-btn:hover {
-    color: #212529;
+    padding: 10px 30px;
   }
 }
-
-
-
-
 
 .read-more-btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.2s;
-}
-
-.footer {
-  background-color: #6667ab;
-  color: white;
-
-  .title {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-  }
-
-  .sub-title {
-    font-size: 17px;
-  }
-
-  h2 {
-    font-family: 'Pacifico', sans-serif;
-  }
-
-  .footer-content {
-    padding-top: 40px;
-
-    p {
-      margin: 0;
-    }
-
-    .web-add {
-      margin-top: 10px;
-    }
-  }
-
-  .icon-footer {
-    display: inline;
-
-    svg {
-      width: 36px;
-      height: 36px;
-      fill: white;
-    }
-  }
-
 }

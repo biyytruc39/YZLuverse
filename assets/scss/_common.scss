@@ -26,17 +26,20 @@ ul {
 	list-style: none;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Nunito',sans-serif;
 	color: lightgrey;
 	font-style: italic;
 	opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Nunito',sans-serif;
 	font-style: italic;
 	color: lightgrey;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Nunito',sans-serif;
 	font-style: italic;
 	color: lightgrey;
 }
@@ -45,10 +48,10 @@ $peri: #6667ab;
 
 //Header
 header {
-	border-bottom: 1px solid lightgray;
 	@media (max-width: 575.98px) {
 		position: relative;
 	}
+  margin-bottom: 5px;
 }
 //Main header
 .main-header {
@@ -67,33 +70,6 @@ header {
 	}
 
 	.main-header-right {
-		.form-search {
-			border-bottom: 1px solid $peri;
-			.search {
-				height: 30px;
-				width: 300px;
-				outline: none;
-				font-family: 'Poppins', sans-serif;
-				border: none;
-				@media (max-width: 575.98px) {
-					width: 120px;
-				}
-				@media (max-width: 400px) {
-					width: 90px;
-				}
-			}
-	
-			.search-button {
-				background: transparent;
-				outline: none;
-				border: none;
-				.fa-search {
-					color: $peri;
-				}
-			}
-		}
-		
-
 		.header-cart {
 			cursor: pointer;
 			.cart-icon {
@@ -105,11 +81,29 @@ header {
 				font-size: 10px;
 			}
 		}
+    .user-info {
+      min-width: 130px;
+      @media (max-width: 767.98px) {
+        min-width: 110px;
+      }
+      p {
+        margin: 0;
+        font-size: 1rem;
+        a {
+          color: #6c757d;
+          white-space: nowrap;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
 	}
 	@media (max-width: 575.98px) {
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 15px;
 		left: 45px;
 		z-index: 1;
 		width: auto;
@@ -135,14 +129,21 @@ header {
 		background-color: white;
 	}
 	.navbar-nav {
+    // @media (max-width: 767.98px) {	
+    // }
+    max-width: 800px;
 		.nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
 			.nav-link {
-				margin: 0 25px;
-				color: black;
-				padding-top: 0;
-				@media (max-width: 767.98px) {	
-					margin: 0 15px;
-				}
+				margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #6c757d;
 				@media (max-width: 575.98px) {
 					text-align: center;
 					padding: 1.5rem;
@@ -151,31 +152,108 @@ header {
 					color: $peri;
 				}
 			}
-
-			.dropdown-menu {
-				font-family: 'Nunito', sans-serif;
-				font-size: 1rem;
-				.dropdown-item {
-					&:hover, focus {
-						color: $peri;
-						background: transparent;
-					}
-				}
-				@media (max-width: 575.98px) {
-					a {
-						text-align: center;
-					}
-				}
-			}
-
 			&:hover {
 				.nav-link {
 					color: $peri;
 				}
 			}
 		}
+    .search {
+      flex-grow: 1;
+      .form-search {
+        flex-grow: 1;
+        height: 30px;
+        .search {
+          outline: none;
+          font-family: 'Poppins', sans-serif;
+          border: 1px solid $peri;
+          padding: .25rem;
+          border-radius: 0.25rem 0 0 0.25rem;
+        }
+    
+        .search-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0 0.25rem 0.25rem 0;
+        }
+      }
+    }
 	}
 	@media (max-width: 575.98px) {
 		padding-top: 25px;
 	}
+}
+// Footer
+.footer {
+  background-color: #6667ab;
+  color: white;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .sub-title {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-family: 'Pacifico', sans-serif;
+  }
+
+  .footer-content {
+    h5 {
+      font-size: 1rem;
+      text-decoration: underline;
+      margin-bottom: 1rem;
+      font-family: "Pacifico", sans-serif;
+      > a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    p {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      &:not(:last-child) {
+        margin-bottom: .25rem;
+      }
+    }
+  }
+
+  .find-us {
+    display: flex;
+    flex-direction: column;
+    .find-us-content {
+      margin-top: auto;
+      h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .icon-footer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 85px;
+        a {
+         color: white;
+         text-decoration: none;
+         i {
+           font-size: 20px;
+         }
+         &:not(:last-child) {
+           margin-right: 20px;
+         }
+        }
+      }
+    }
+  }
 }

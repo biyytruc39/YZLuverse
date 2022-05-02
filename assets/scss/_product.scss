@@ -31,13 +31,18 @@
         height: 372px;
     }
 }
-.men-product-tilte {
+.main-product-tilte {
     text-align: center;
     font-size: 26px;
     color: #6667ab;
     font-weight: 700;
     margin-bottom: 30px;
 }
-.men-product-list {
+.products-list {
     padding-bottom: 60px;
+    img {
+      max-width: 200px;
+      width: 100%;
+      margin: auto;
+    }
 }
