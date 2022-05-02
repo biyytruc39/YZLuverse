@@ -29,11 +29,15 @@ $peri: #6667ab;
     display: flex;
     justify-content: center;
     .product-card {
+      width: 100%;
       border: 0;
-      max-width: 200px;
-      padding: 10px 5px;
       &:hover {
         box-shadow: rgb(0 0 0 / 35%) 0px 0px 10px;
+      }
+      img {
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
       }
       .card-body {
         display: flex;

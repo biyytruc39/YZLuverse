@@ -160,6 +160,7 @@ header {
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
   color: #6667ab;
+  font-weight: bold;
 }
 .navbar .navbar-nav .nav-item:hover .nav-link {
   color: #6667ab;
@@ -278,12 +279,16 @@ header {
   justify-content: center;
 }
 .products-home .product-card-wrapper .product-card {
+  width: 100%;
   border: 0;
-  max-width: 200px;
-  padding: 10px 5px;
 }
 .products-home .product-card-wrapper .product-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+}
+.products-home .product-card-wrapper .product-card img {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
 }
 .products-home .product-card-wrapper .product-card .card-body {
   display: flex;
